@@ -9,7 +9,7 @@ app.use(express.static('frontend')) //this line tells express to serve js or css
 app.get('/', (req, res) => res.sendFile(__dirname+'/frontend/html/home.html'))
 app.get('/login', (req, res) => res.send('Login'))
 app.get('/register', (req, res) => res.send('Register'))
-var student={"name":"sarika","clg":"vnr"}
+var student={"name":"Arjuna","clg":"BITS"}
 app.get('/data', (req, res) => res.json(student))
 
 
